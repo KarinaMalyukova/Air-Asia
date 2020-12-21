@@ -1,0 +1,397 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.42;
+    background: #001821;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin-top: 0px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.header {
+height: 123.36px;
+position: relative;
+margin-bottom: 67px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-page-wrapper {
+    background: url(./images/1.png) center top no-repeat, url(./images/2.png) right bottom 165px no-repeat;
+}
+
+.logo {
+display: block;
+position: absolute;
+top: 29px;
+left: 390px;
+}
+
+.menu {
+    position: absolute;
+    top: 42px;
+    left: 554px;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 54px;
+}
+
+.menu__item:last-child {
+margin-right: 0px;
+}
+
+.menu__link {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: #dfb56d;  
+}
+
+.contacts {
+    position: absolute;
+    font-style: normal;
+    top: 26.64px;
+    right: 389px;
+    text-align: right;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-size: 26px;
+    margin-bottom: 2px;
+}
+
+.contacts__workhours {
+    right: 0px;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.main {
+    padding-left: 390px;
+}
+
+.preview {
+    width: 511px;
+    margin-bottom: 245px;
+}
+
+.preview__title {
+    font-size: 72px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 98.05px;
+    margin-bottom: 23.6px;
+}
+
+.preview__text {
+    font-size: 18px;
+    margin-bottom: 32.5px;
+}
+
+.btn {
+    border-radius: 35px;
+    padding: 18px 39px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-color: #F5170E;
+}
+
+.btn--width--big {
+    padding: 18px 40px;
+}
+
+.btn--color--red {
+    color: white;
+    background: #F5170E
+}
+
+.btn--color--white {
+    background: #fff;
+    color: #F5170E;
+    border-color: #F5170E;
+}
+
+.features {
+    margin-bottom: 127px;
+}
+
+.features__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.features__title-fire {
+    margin-left: 4px;
+}
+
+.features__item {
+    min-height: 4px;
+    background: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 22px;
+    font-size: 5px;
+    position: relative;
+}
+
+.features__item:last-child {
+    margin-right: 0px;
+}
+
+.features__icon {
+min-height: 144px;
+margin-bottom: 20px;
+}
+
+.features__content {
+    padding: 13px 19px;
+    color: #000000;
+}
+
+.features__subtitle {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+
+.features__desc-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    margin-right: 27px;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.features__desc-block:last-child {
+    margin-right: 0px;
+}
+
+.features__desc-block-time {
+    margin-left: 15px;
+    position: absolute;
+}
+
+.features__desc-block-meal {
+    margin-left: 5px;
+    position: absolute;
+}
+
+.features__desk-block-icon {
+    margin-left: 5px;
+}
+
+.features__text {
+    font-size: 13px;
+    color: #303030;
+    width: 324px;
+    line-height: 21px;
+    margin-bottom: 11.5px;
+}
+
+.features__btn {
+    margin-bottom: 26px;
+    padding: 17px 29px;
+    margin-left: 21px;
+}
+
+.news {
+    margin-bottom: 152px;
+}
+
+.news__title {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.42;
+    margin-bottom: 51px;
+}
+
+.news__item {
+    width: 554px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 25px;
+    margin-bottom: 57.5px;
+}
+
+.news__item:last-child {
+    margin-right: 0px;  
+}
+
+.news__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 5px 27px;
+    min-height: 147px;
+}
+
+.news__date {
+    font-size: 14px;
+    margin-bottom: 20.5px;
+}
+
+.news__subtitle {
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.paginator {
+    text-align: center;
+}
+
+.paginator__display, .paginator__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.paginator__display {
+    margin-right: 25px;
+}
+
+.paginator__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.paginator__item--active .paginator__link {
+    background: #FFFFFF;
+    color: #F5170E;
+    line-height: 32px;
+}
+
+.about {
+    position: relative;
+    margin-bottom: 53px;
+}
+
+.about:before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 490px;
+  height: 505px;
+  background: url(./images/gates.png) center center / cover no-repeat;  
+}
+
+.about__img {
+    width: 785px;
+    height: 455px;
+    margin-left: -139px;
+    margin-top: 99px;
+}
+
+.about__content {
+    top: 100px;
+    left: 435px;
+    right: 202px;
+    padding: 70px 81px;
+    color: #000000;
+    margin-bottom: 66px;
+    display: inline-block;
+    position: absolute;
+}
+
+.about__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+.about__text p {
+    margin-bottom: 43px;
+}
+
+.footer {
+    height: 146px;
+    position: relative;
+}
+
+.contacts {
+    display: block;
+}
+
+.contact__text {
+    font-size: 11px;
+    color: #9A9A9A;
+}
+
+.contacts__phone {
+    font-size: 26px;
+}
+
+.socials {
+    bottom: 61px;
+    right: 654px;
+    position: absolute;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.socials__item:last-child {
+    margin-right: 0px;
+}
+
+.socials__link {
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+}
