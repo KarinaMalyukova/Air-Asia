@@ -4,8 +4,16 @@ body {
     font-size: 16px;
     line-height: 1.42;
     background: #001821;
+    height: 100%;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }
 
 a {
@@ -14,24 +22,19 @@ a {
 
 ul {
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
 }
 
 ul li {
     list-style: none;
 }
 
-p {
-    margin-top: 0px;
-}
-
 .wrapper {
-    margin: 0 auto;
-    width: 1920px;
+    background: url(./images/1.png) center top no-repeat, url(./images/2.png) center bottom 165px no-repeat;
 }
 
 .header {
-height: 123.36px;
+min-height: 130.36px;
 position: relative;
 margin-bottom: 67px;
 }
@@ -40,27 +43,21 @@ margin-bottom: 67px;
     box-sizing: border-box;
 }
 
-.main-page-wrapper {
-    background: url(./images/1.png) center top no-repeat, url(./images/2.png) right bottom 165px no-repeat;
-}
-
 .logo {
 display: block;
 position: absolute;
 top: 29px;
-left: 390px;
 }
 
 .menu {
     position: absolute;
-    top: 42px;
-    left: 554px;
+    top: 41px;
+    left: 163px;
 }
 
 .menu__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 54px;
 }
 
 .menu__item:last-child {
@@ -70,6 +67,7 @@ margin-right: 0px;
 .menu__link {
     font-size: 14px;
     text-decoration: none;
+    margin-right: 51px;
 }
 
 .menu__link:hover {
@@ -80,7 +78,7 @@ margin-right: 0px;
     position: absolute;
     font-style: normal;
     top: 26.64px;
-    right: 389px;
+    right: 0px;
     text-align: right;
 }
 
@@ -88,16 +86,13 @@ margin-right: 0px;
     text-decoration: none;
     font-size: 26px;
     margin-bottom: 2px;
+    display: inline-block;
 }
 
 .contacts__workhours {
     right: 0px;
     text-decoration: underline;
     font-size: 12px;
-}
-
-.main {
-    padding-left: 390px;
 }
 
 .preview {
@@ -109,7 +104,7 @@ margin-right: 0px;
     font-size: 72px;
     font-weight: bold;
     font-style: normal;
-    line-height: 98.05px;
+    line-height: 99.05px;
     margin-bottom: 23.6px;
 }
 
@@ -120,11 +115,13 @@ margin-right: 0px;
 
 .btn {
     border-radius: 35px;
-    padding: 18px 39px;
+    padding: 18px 30px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    border-color: #F5170E;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
 }
 
 .btn--width--big {
@@ -143,13 +140,13 @@ margin-right: 0px;
 }
 
 .features {
-    margin-bottom: 127px;
+    margin-bottom: 121px;
 }
 
 .features__title {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
 }
 
 .features__title-fire {
@@ -157,13 +154,14 @@ margin-right: 0px;
 }
 
 .features__item {
-    min-height: 4px;
     background: #fff;
     border-radius: 4px;
     display: inline-block;
     margin-right: 22px;
     font-size: 5px;
     position: relative;
+    width: 362px;
+    overflow: hidden;
 }
 
 .features__item:last-child {
@@ -172,17 +170,24 @@ margin-right: 0px;
 
 .features__icon {
 min-height: 144px;
-margin-bottom: 20px;
+margin-bottom: 7px;
+height: 100%;
+width: 100%;
+object-fit: cover;
 }
 
 .features__content {
-    padding: 13px 19px;
+    padding: 26px 21px;
     color: #000000;
 }
 
 .features__subtitle {
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.features__desc {
     margin-bottom: 23px;
 }
 
@@ -190,11 +195,10 @@ margin-bottom: 20px;
 .features__desc-block {
     display: inline-block;
     vertical-align: top;
-    width: 130px;
-    margin-right: 27px;
+    width: 136px;
+    margin-right: 19px;
     color: #666666;
     font-size: 16px;
-    margin-bottom: 16px;
 }
 
 .features__desc-block:last-child {
@@ -202,17 +206,16 @@ margin-bottom: 20px;
 }
 
 .features__desc-block-time {
-    margin-left: 15px;
-    position: absolute;
+    margin-left: 10px;
 }
 
 .features__desc-block-meal {
     margin-left: 5px;
-    position: absolute;
 }
 
 .features__desk-block-icon {
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 .features__text {
@@ -220,17 +223,15 @@ margin-bottom: 20px;
     color: #303030;
     width: 324px;
     line-height: 21px;
-    margin-bottom: 11.5px;
+    margin-bottom: 24.5px;
 }
 
 .features__btn {
-    margin-bottom: 26px;
     padding: 17px 29px;
-    margin-left: 21px;
 }
 
 .news {
-    margin-bottom: 152px;
+    margin-bottom: 143px;
 }
 
 .news__title {
@@ -238,7 +239,11 @@ margin-bottom: 20px;
     font-weight: bold;
     font-style: normal;
     line-height: 1.42;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+}
+
+.news__list {
+    margin-bottom: 57.3px;
 }
 
 .news__item {
@@ -248,8 +253,7 @@ margin-bottom: 20px;
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    margin-right: 25px;
-    margin-bottom: 57.5px;
+    margin-right: 23px;
 }
 
 .news__item:last-child {
@@ -268,27 +272,26 @@ margin-bottom: 20px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    padding: 5px 27px;
+    padding: 8px 30px;
     min-height: 147px;
 }
 
 .news__date {
     font-size: 14px;
-    margin-bottom: 20.5px;
 }
 
 .news__subtitle {
     font-size: 24px;
     margin-bottom: 4px;
     font-weight: bold;
-    margin-top: 12px;
+    margin-top: 14px;
 }
 
 .paginator {
     text-align: center;
 }
 
-.paginator__display, .paginator__item {
+.paginator__display, .paginator__item, .paginator__list {
     display: inline-block;
     vertical-align: middle;
 }
@@ -305,17 +308,16 @@ margin-bottom: 20px;
     text-decoration: none;
     font-weight: bold;
     position: relative;
+    line-height: 32px;
 }
 
 .paginator__item--active .paginator__link {
     background: #FFFFFF;
     color: #F5170E;
-    line-height: 32px;
 }
 
 .about {
-    position: relative;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 }
 
 .about:before {
@@ -327,62 +329,75 @@ margin-bottom: 20px;
   background: url(./images/gates.png) center center / cover no-repeat;  
 }
 
-.about__img {
-    width: 785px;
-    height: 455px;
-    margin-left: -139px;
-    margin-top: 99px;
-}
-
 .about__content {
-    top: 100px;
-    left: 435px;
-    right: 202px;
-    padding: 70px 81px;
+    padding: 70px 202px 62px 81px;
     color: #000000;
-    margin-bottom: 66px;
     display: inline-block;
-    position: absolute;
+    width: 785px;
+    height: 455px; 
+    background: url(./images/mountains.png);
+    margin-left: -142px;
+    margin-top: 96px;
 }
 
 .about__title {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 37px;
+    margin-bottom: 42px;
 }
 
-.about__text p {
-    margin-bottom: 43px;
+.about__text {
+    margin-bottom: 62px;
 }
 
 .footer {
-    height: 146px;
+    min-height: 146px;
     position: relative;
-}
-
-.contacts {
+    border-top: 1px solid #FFFFFF;
     display: block;
 }
 
-.contact__text {
+.footer .logo {
+    top: 47px;
+}
+
+.footer .menu {
+    position: absolute;
+    top: 58px;
+    left: 163px;
+}
+
+.footer .menu__link {
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 51px;
+}
+
+.footer .contacts {
+    display: block;
+    position: absolute;
+    top: 47.64px;
+}
+
+.footer .contact__text {
     font-size: 11px;
     color: #9A9A9A;
 }
 
-.contacts__phone {
+.footer .contacts__phone {
     font-size: 26px;
 }
 
 .socials {
-    bottom: 61px;
-    right: 654px;
+    bottom: 59px;
+    right: 265px;
     position: absolute;
 }
 
 .socials__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .socials__item:last-child {
